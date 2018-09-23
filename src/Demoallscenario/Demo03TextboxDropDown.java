@@ -7,20 +7,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class Demo02DropDown {
+public class Demo03TextboxDropDown {
 	
 	WebDriver driver;
 	
 	ChromeOptions option = new ChromeOptions();
 	
-	String url = "https://www.facebook.com/r.php";
+	String url = "http://www.google.com";
+	
+	String SearchValue = "hai";
 	
 	@Test
-	public void DropDown() {
+	public void TextboxDropDown() throws Exception{
 		
 		option.addArguments("disable-infobars");
 		
@@ -34,25 +35,22 @@ public class Demo02DropDown {
 		
 		driver.get(url);
 		
-		WebElement dd = driver.findElement(By.id("month"));
+		driver.findElement(By.id("lst-ib")).sendKeys(SearchValue);
 		
-		Select sl = new Select(dd);
+		Thread.sleep(3000);
 		
-		sl.selectByVisibleText("Nov");
+		List<WebElement> lw = driver.findElements(By.xpath("//*[@class='sbqs_c']//b"));
 		
-		WebElement dd1 = sl.getFirstSelectedOption();
-		
-		String value = dd1.getText();
-		
-		System.out.println(value);
-		
-		List<WebElement> dd2 = sl.getOptions();
-		
-		for(WebElement dd3 : dd2) {
+		for (WebElement lw1 : lw) {
 			
-			String value1 = dd3.getText();
-			System.out.println("Dropdown value: "+value1);
+			String value = lw1.getText();
+			
+			String SearchValue1=SearchValue+value;
+			
+			System.out.println("Suggestion Search value: "+SearchValue1);
 		}
+		
+		
 										
 	}
 	
