@@ -7,10 +7,17 @@ public class Demo07SwapString {
 		String a = "Hello";
 		String b = "World";
 		
+		//Using Third datatype
+		String c ="";
+		c=a;
+		a=b;
+		b=c;
+		System.out.println("Using Third datatype a: "+a);
+		System.out.println("Using Third datatype b: "+b);
 		
-		String c = a+b;
 		
-		System.out.println(c);
+		
+		//
 		
 		
 		
