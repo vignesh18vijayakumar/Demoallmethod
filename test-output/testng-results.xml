@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20862" started-at="2018-09-23T13:50:20Z" finished-at="2018-09-23T13:50:41Z">
+  <suite name="Default suite" duration-ms="19056" started-at="2018-09-26T02:18:46Z" finished-at="2018-09-26T02:19:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20862" started-at="2018-09-23T13:50:20Z" finished-at="2018-09-23T13:50:41Z">
-      <class name="Demoallscenario.Demo03TextboxDropDown">
-        <test-method status="PASS" signature="TextboxDropDown()[pri:0, instance:Demoallscenario.Demo03TextboxDropDown@458c1321]" name="TextboxDropDown" duration-ms="15436" started-at="2018-09-23T13:50:21Z" finished-at="2018-09-23T13:50:36Z">
+    <test name="Default test" duration-ms="19056" started-at="2018-09-26T02:18:46Z" finished-at="2018-09-26T02:19:05Z">
+      <class name="Demoallscenario.Demo04ActionClass">
+        <test-method status="PASS" signature="Openbrowser()[pri:0, instance:Demoallscenario.Demo04ActionClass@11438d26]" name="Openbrowser" duration-ms="15369" started-at="2018-09-26T02:18:46Z" finished-at="2018-09-26T02:19:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TextboxDropDown -->
-        <test-method status="PASS" signature="deardown()[pri:0, instance:Demoallscenario.Demo03TextboxDropDown@458c1321]" name="deardown" is-config="true" duration-ms="5342" started-at="2018-09-23T13:50:36Z" finished-at="2018-09-23T13:50:41Z">
+        </test-method> <!-- Openbrowser -->
+        <test-method status="PASS" signature="deardown()[pri:0, instance:Demoallscenario.Demo04ActionClass@11438d26]" name="deardown" is-config="true" duration-ms="3535" started-at="2018-09-26T02:19:01Z" finished-at="2018-09-26T02:19:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deardown -->
-      </class> <!-- Demoallscenario.Demo03TextboxDropDown -->
+        <test-method status="PASS" signature="Actionclass()[pri:0, instance:Demoallscenario.Demo04ActionClass@11438d26]" name="Actionclass" is-config="true" duration-ms="1" started-at="2018-09-26T02:19:05Z" finished-at="2018-09-26T02:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Actionclass -->
+      </class> <!-- Demoallscenario.Demo04ActionClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
